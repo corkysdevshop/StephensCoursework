@@ -92,7 +92,7 @@
     [users setObject:self.textField2.text forKey:self.textField1.text];
     }
     
-    //[ ]needs validation: 1 uppercase, 1 lowercase, 1 number or errmsg. 
+    //[ ]needs validation: 1 uppercase, 1 lowercase, 1 number or errmsg.
 
 }
 
