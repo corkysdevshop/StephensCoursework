@@ -61,7 +61,7 @@
     //general
     
     NSIndexPath *placementOfNewCell = [NSIndexPath indexPathForRow:0 inSection:0];
-    NSArray *arrayOfPaths = @[placementOfNewCell];
+    cementOfNewCell];
     
     //animation
     [self.tableView beginUpdates];
@@ -79,8 +79,24 @@
     
     //COOL
     [self.tableView setEditing:!self.tableView.editing animated:YES];
+    
 }
-
+-(BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+-(void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+{
+    NSString *stringToMove = [newArray objectAtIndex:sourceIndexPath.row];
+    [newArray removeObjectAtIndex:sourceIndexPath.row];
+    [newArray insertObject:stringToMove atIndex:destinationIndexPath.row];
+    
+    /*    
+     NSString *stringToMove = [self.reorderingRows objectAtIndex:sourceIndexPath.row];
+     [self.reorderingRows removeObjectAtIndex:sourceIndexPath.row];
+     [self.reorderingRows insertObject:stringToMove atIndex:destinationIndexPath.row];
+     */
+}
 
 //delete things
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
