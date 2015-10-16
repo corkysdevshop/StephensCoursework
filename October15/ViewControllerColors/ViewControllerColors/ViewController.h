@@ -1,12 +1,13 @@
 //
 //  ViewController.h
-//  TableViewDeleting
+//  ViewControllerColors
 //
-//  Created by Stephen Printup on 10/13/15.
-//  Copyright © 2015 Stephen Printup. All rights reserved.
+//  Created by Class on 10/15/15.
+//  Copyright © 2015 Class. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondTVViewController.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

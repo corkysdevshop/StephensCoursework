@@ -28,7 +28,6 @@
     arrayOfDrinks = [[NSMutableArray alloc]init];
     search = false;
 
-
     
     [arrayOfFoods addObject:@"apple"];
     [arrayOfFoods addObject:@"orange"];
