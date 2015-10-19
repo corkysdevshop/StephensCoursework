@@ -1,6 +1,6 @@
 //
 //  SecondVC.m
-//  delegationProject
+//  delgationDrinks
 //
 //  Created by Stephen Printup on 10/19/15.
 //  Copyright © 2015 Stephen Printup. All rights reserved.
@@ -16,20 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.textField.text = self.textFieldStart;
-}
-- (IBAction)buttonSecondVC:(id)sender {
-    [self.delegateCustom messageToPass:self.textField.text];
-    
-    [self.delegateCustom colorToPass:[UIColor redColor]];
-    
-    [self.navigationController popViewControllerAnimated:YES];
-    
-    //modal
-    [self dismissViewControllerAnimated:true completion:nil];
+
+    self.labelSVC.text = self.selectedDrink;
 }
 
+- (IBAction)dismissButton:(id)sender
+{
+    [self.delegateCustom passText:self.textField.text];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 /*
 #pragma mark - Navigation
