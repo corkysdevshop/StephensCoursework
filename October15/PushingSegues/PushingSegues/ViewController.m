@@ -19,8 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-
 }
 
 - (IBAction)pressedButtonTextToLabel:(id)sender
@@ -30,14 +28,11 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
-    
     if ([segue.identifier isEqualToString:@"push"])
     {
         SecondVC *svc = [segue destinationViewController];
         svc.passString = self.labelOfText.text;
     }
-    
 }
 
 

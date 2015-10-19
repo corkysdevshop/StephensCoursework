@@ -30,12 +30,6 @@
     self.labelSecondVC.text = self.passString;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 //modal connection vc2-vc3
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
