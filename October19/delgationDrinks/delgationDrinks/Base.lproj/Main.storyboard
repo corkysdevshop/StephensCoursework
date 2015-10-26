@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aGw-DL-HVD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="40" y="75" width="240" height="287"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="e3p-SQ-a7m">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="287"/>
+                                    <rect key="frame" x="0.0" y="64" width="240" height="287"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </tableView>
@@ -29,9 +29,17 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="O2H-X9-ETy"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QV-1F-bgl">
+                                <rect key="frame" x="113" y="488" width="95" height="30"/>
+                                <state key="normal" title="Add Drink"/>
+                                <connections>
+                                    <segue destination="dAK-LH-pVC" kind="push" identifier="" id="XvN-Qz-Uta"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MuQ-Xi-KZD"/>
                     <connections>
                         <outlet property="tableView" destination="pvr-Ft-clQ" id="Pjc-Gt-AWE"/>
                         <segue destination="g9C-h1-vKO" kind="modal" identifier="modals" modalTransitionStyle="crossDissolve" id="gMW-SB-rkS"/>
@@ -39,7 +47,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234" y="366"/>
+            <point key="canvasLocation" x="766" y="366"/>
+        </scene>
+        <!--ThirdVC-->
+        <scene sceneID="0cM-z0-tSf">
+            <objects>
+                <viewController id="dAK-LH-pVC" customClass="ThirdVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PSv-Ms-Zf7"/>
+                        <viewControllerLayoutGuide type="bottom" id="SHl-4X-oHz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qoc-YB-wcG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Drink to Add" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BB6-Vt-WTT">
+                                <rect key="frame" x="112" y="125" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dAK-LH-pVC" id="ceF-54-C3g"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ymC-T0-bT6"/>
+                    <connections>
+                        <outlet property="textFieldDrinktoAdd" destination="BB6-Vt-WTT" id="z24-F8-VVL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2A-P4-fDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="1055"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="pyX-h2-Y3r">
@@ -81,7 +121,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vC-of-yBE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="366"/>
+            <point key="canvasLocation" x="1185" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qX3-bR-YAy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aGw-DL-HVD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Heh-PG-fSL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hEA-39-Khs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wU-jI-bCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="366"/>
         </scene>
     </scenes>
 </document>

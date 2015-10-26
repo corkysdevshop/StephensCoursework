@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56930E911BD6B70D00A5EA91 /* ThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 56930E901BD6B70D00A5EA91 /* ThirdVC.m */; settings = {ASSET_TAGS = (); }; };
 		56D1BC541BD5A0E100371DDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1BC531BD5A0E100371DDE /* main.m */; };
 		56D1BC571BD5A0E100371DDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1BC561BD5A0E100371DDE /* AppDelegate.m */; };
 		56D1BC5A1BD5A0E100371DDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1BC591BD5A0E100371DDE /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56930E8F1BD6B70D00A5EA91 /* ThirdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdVC.h; sourceTree = "<group>"; };
+		56930E901BD6B70D00A5EA91 /* ThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdVC.m; sourceTree = "<group>"; };
 		56D1BC4F1BD5A0E100371DDE /* delgationDrinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delgationDrinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D1BC531BD5A0E100371DDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56D1BC551BD5A0E100371DDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				56D1BC591BD5A0E100371DDE /* ViewController.m */,
 				56D1BC851BD5A1BC00371DDE /* SecondVC.h */,
 				56D1BC861BD5A1BC00371DDE /* SecondVC.m */,
+				56930E8F1BD6B70D00A5EA91 /* ThirdVC.h */,
+				56930E901BD6B70D00A5EA91 /* ThirdVC.m */,
 				56D1BC5B1BD5A0E100371DDE /* Main.storyboard */,
 				56D1BC5E1BD5A0E100371DDE /* Assets.xcassets */,
 				56D1BC601BD5A0E100371DDE /* LaunchScreen.storyboard */,
@@ -277,6 +282,7 @@
 			files = (
 				56D1BC5A1BD5A0E100371DDE /* ViewController.m in Sources */,
 				56D1BC571BD5A0E100371DDE /* AppDelegate.m in Sources */,
+				56930E911BD6B70D00A5EA91 /* ThirdVC.m in Sources */,
 				56D1BC871BD5A1BC00371DDE /* SecondVC.m in Sources */,
 				56D1BC541BD5A0E100371DDE /* main.m in Sources */,
 			);
@@ -502,6 +508,7 @@
 				56D1BC7E1BD5A0E100371DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56D1BC7F1BD5A0E100371DDE /* Build configuration list for PBXNativeTarget "delgationDrinksTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				56D1BC811BD5A0E100371DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56D1BC821BD5A0E100371DDE /* Build configuration list for PBXNativeTarget "delgationDrinksUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				56D1BC841BD5A0E100371DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

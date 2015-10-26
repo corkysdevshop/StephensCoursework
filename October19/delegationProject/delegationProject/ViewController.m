@@ -34,12 +34,10 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-   
         SecondVC *svc = [segue destinationViewController];
         svc.delegateCustom = self;
         svc.textFieldStart = self.labelMain.text;
-        
 }
 
-
 @end
+

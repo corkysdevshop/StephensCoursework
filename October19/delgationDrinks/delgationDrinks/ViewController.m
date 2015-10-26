@@ -5,6 +5,7 @@
 //  Created by Stephen Printup on 10/19/15.
 //  Copyright © 2015 Stephen Printup. All rights reserved.
 //
+// [ ] add drink button fails to push to third VC
 
 #import "ViewController.h"
 
@@ -66,11 +67,27 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
-    SecondVC *svc = [segue destinationViewController];
-    svc.selectedDrink = aDrink;
-    
-    svc.delegateCustom = self;
-    
+    if ([segue.identifier isEqualToString:@"modals"])
+    {
+        //second VC
+        SecondVC *svc = [segue destinationViewController];
+        svc.selectedDrink = aDrink;
+        
+        svc.delegateCustom = self;
+    }
+    else
+    {
+        //third VC
+        ThirdVC *tvc = [segue destinationViewController];
+        tvc.delegateCustom = self;
+    }
 }
+
+-(void)addDrink:(NSString *)newDrinkToPass
+{
+    [drinksArray addObject:newDrinkToPass];
+    [self.tableView reloadData];
+    NSLog(@"%@",drinksArray);
+}
+
 @end

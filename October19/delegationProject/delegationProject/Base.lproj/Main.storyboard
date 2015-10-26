@@ -33,7 +33,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXm-iL-vT4">
                                 <rect key="frame" x="9" y="113" width="269" height="84"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -104,6 +104,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="M2L-Oc-eNb"/>
+        <segue reference="Zcq-Ul-FMI"/>
     </inferredMetricsTieBreakers>
 </document>

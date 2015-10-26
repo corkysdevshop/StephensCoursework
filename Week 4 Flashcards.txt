@@ -1,0 +1,36 @@
+Week 4 Flashcards
+
+constraints: are constraints on UIElements you can set their orientation and size and how they scale on different devices. 
+
+CGPoint: a reference point of a UIElement that is the center of it.
+
+CG Rect: a reference point of a UIElement that is the top left corner.
+
+.frame: property on a UIElement for setting its origin and size.
+
+.bounds: it's when you're referencing a UIElement by looking at it.
+
+NSNotification Center: a way to communicate with multiple objects.
+
+Predicates: a way to filter objects with magic string; sql garble no idea
+
+Lorem Ipsum: filler text
+
+Memory location of primitives: mars
+
+UITesting: 
+
+Difference between strong and weak connections
+
+Runtime error breakpoint
+
+Exception Breakpoint
+
+OpenGL ES Error Breakpoint
+
+Symbolic Breakpoint
+
+Test Failure Breakpoint
+
+id in UIObject: identification device 
+

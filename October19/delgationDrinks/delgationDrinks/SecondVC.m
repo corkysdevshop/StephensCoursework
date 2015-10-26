@@ -18,6 +18,7 @@
     [super viewDidLoad];
 
     self.labelSVC.text = self.selectedDrink;
+    self.textField.text = self.selectedDrink;
 }
 
 - (IBAction)dismissButton:(id)sender
